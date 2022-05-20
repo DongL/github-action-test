@@ -1,0 +1,91 @@
+# name: Ali
+# age: 20
+# address: 'sfsfs'
+# active: true
+# key:
+#     key: value
+#     key2: 4null4
+
+
+
+array:
+    - item1
+    - iterm2
+    - {key: value}
+
+{
+  "array": [
+    "item1",
+    "iterm2",
+    {
+      "key": "value"
+    }
+  ]
+}
+
+jsonArray: [items1, item2]
+
+{
+  "jsonArray": [
+    "items1",
+    "item2"
+  ]
+}
+
+
+
+objectsArray:
+    - key: value
+    - key: alue
+{
+  "objectsArray": [
+    {
+      "key": "value"
+    },
+    {
+      "key": "alue"
+    }
+  ]
+}
+
+
+array: [ad, bde]
+
+{
+  "array": [
+    "ad",
+    "bde"
+  ]
+}
+
+array:
+    - key: value
+      key2: ccc
+
+{
+  "array": [
+    {
+      "key": "value",
+      "key2": "ccc"
+    }
+  ]
+}   
+
+
+longText: >
+    fjaslfjldskfjlajf fakfjsd;fljafkj 
+    ads;flkjasf jdfl fl;jas f
+
+
+{
+  "longText": "fjaslfjldskfjlajf fakfjsd;fljafkj  ads;flkjasf jdfl fl;jas f\n"
+}
+
+
+longText: |
+    fjaslfjldskfjlajf fakfjsd;fljafkj 
+    ads;flkjasf jdfl fl;jas f
+
+{
+  "longText": "fjaslfjldskfjlajf fakfjsd;fljafkj \nads;flkjasf jdfl fl;jas f\n"
+}
