@@ -1,5 +1,5 @@
 name: Actions workflow
-on: 
+# on: 
   # push:
   #   branches:
   #     - master
