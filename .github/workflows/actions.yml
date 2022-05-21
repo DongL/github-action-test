@@ -3,6 +3,7 @@ on:
   push:
   pull_request:
     types: [closed, assigned, opened, reopened]
+  issues: 
 
 jobs:
   run-github-actions:
