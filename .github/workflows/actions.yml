@@ -1,8 +1,8 @@
 name: Actions workflow
-# on: 
-  # push:
-  #   branches:
-  #     - master
+on: 
+  push:
+    branches:
+      - master
   #     - "feature/*"
   #     - "feature/**"
   #     - "!feature/featC"
