@@ -1,5 +1,5 @@
 name: Context testing
-on: pull_request
+on: push
 
 jobs:
   functions:
