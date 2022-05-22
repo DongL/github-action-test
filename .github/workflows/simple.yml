@@ -5,9 +5,11 @@ on: [pull_request]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-    steps: 
+    # timeout-minutes: 360
+    steps:
       - name: echo a string
         run: echo "hello world!"
+        # continue-on-error: true
       - name: multiline script
         run: |
           node - v
@@ -26,6 +28,3 @@ jobs:
       - name: list Directory
         run: pwd
         shell: bash
-
-
-
