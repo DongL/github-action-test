@@ -5,9 +5,9 @@ jobs:
   docker-steps:
     runs-on: ubuntu-latest
     container: 
-      image: node:10.18.0-jessie
+      image: docker://node:10.18.0-jessie
     steps:
-      - name: log node version
+      - name: custome script
         run: node -v
       - name: Log node version
         uses: docker://node:12.14.1-alpine3.10
