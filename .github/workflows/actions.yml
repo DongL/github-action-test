@@ -1,5 +1,5 @@
 name: Actions workflow
-on: 
+on:
   push:
     branches:
       # - master
@@ -13,13 +13,11 @@ on:
   #     - '**.js'
   #     - '!filename.js'
 
-
-
-    # branches-ignore:
-    #   - null
+  # branches-ignore:
+  #   - null
   # repository_dispatch:
   #   types: [build]
-    
+
   # schedule:
   #   - cron: "0/5 * * * *"
   #   - cron: "0/6 * * * *"
@@ -50,7 +48,7 @@ jobs:
       - name: simple js Actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
-        with: 
+        with:
           who-to-greet: Dong
       - name: Log greeting time
         run: echo "{{ steps.greet.outputs.time }}"
