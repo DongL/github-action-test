@@ -35,7 +35,7 @@ jobs:
         uses: someimportantcompany/github-actions-slack-message@v1
         with:
           webhook-url: ${{ secrets.SLACK_WEBHOOK }}
-          text: Firing a webhook message
+          text: ${{ github.event.commits[0].message }}
 
   node-docker:
     runs-on: ubuntu-latest
