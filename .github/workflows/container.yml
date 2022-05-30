@@ -25,13 +25,14 @@ jobs:
         with:
           entrypoint: ./script.sh
           args: "some strings"
-      - name: send a slack message
-        uses: docker://technosophos/slack-notify
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_MESSAGE: ${{ github.event.commits[0].message }}
+      # - name: send a slack message
+      #   uses: docker://technosophos/slack-notify
+      #   env:
+      #     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      #     SLACK_MESSAGE: ${{ github.event.commits[0].message }}
           # SLACK_MESSAGE: ${{ toJSON(github.event) }}
-      - uses: someimportantcompany/github-actions-slack-message@v1
+      - name: send a slack notification
+        uses: someimportantcompany/github-actions-slack-message@v1
         with:
           webhook-url: ${{ secrets.SLACK_WEBHOOK }}
           text: Firing a webhook message
