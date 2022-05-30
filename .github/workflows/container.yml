@@ -37,6 +37,7 @@ jobs:
           webhook-url: ${{ secrets.SLACK_WEBHOOK }}
           text: ${{ github.event.commits[0].message }}
           color: success
+          image-url: https://pixabay.com/photos/tree-clouds-fields-grass-832079/
 
   node-docker:
     runs-on: ubuntu-latest
