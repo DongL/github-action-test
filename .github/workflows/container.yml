@@ -33,7 +33,7 @@ jobs:
           # SLACK_MESSAGE: ${{ toJSON(github.event) }}
       - uses: someimportantcompany/github-actions-slack-message@v1
         with:
-          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-url: ${{ secrets.SLACK_WEBHOOK }}
           text: Firing a webhook message
 
   node-docker:
