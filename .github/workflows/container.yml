@@ -29,7 +29,8 @@ jobs:
         uses: docker://technosophos/slack-notify
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_MESSAGE: ${{ github.event.commits[0].message }}
+          # SLACK_MESSAGE: ${{ github.event.commits[0].message }}
+          SLACK_MESSAGE: ${{ toJSON(github.event) }}
 
   node-docker:
     runs-on: ubuntu-latest
