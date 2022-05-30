@@ -36,6 +36,7 @@ jobs:
         with:
           webhook-url: ${{ secrets.SLACK_WEBHOOK }}
           text: ${{ github.event.commits[0].message }}
+          color: success
 
   node-docker:
     runs-on: ubuntu-latest
