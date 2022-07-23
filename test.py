@@ -1,4 +1,4 @@
-def get_processing_pipeline(variables, code = '111'):
+def get_processing_pipeline(variables, code = '222'):
     
     num_attribs_mtb = [var for var in variables if 'mtb' in var]
     num_attribs_nonmtb = [var for var in variables if ('mtb' not in var) and (var in var_num)]
